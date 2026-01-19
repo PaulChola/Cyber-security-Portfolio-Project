@@ -1,6 +1,3 @@
-Perfect — here are **expanded notes** for **Foundations of Cybersecurity**, written in **note form** (short paragraphs, clear explanations, not just bullets). These are meant to be **saved and revisited** as reference material over time.
-
----
 
 # Foundations of Cybersecurity — Detailed Notes
 
@@ -117,5 +114,6 @@ Cybersecurity tools help detect, prevent, and respond to threats.
 **Authentication systems** verify user identities and enforce access controls.
 
 ---
+
 
 

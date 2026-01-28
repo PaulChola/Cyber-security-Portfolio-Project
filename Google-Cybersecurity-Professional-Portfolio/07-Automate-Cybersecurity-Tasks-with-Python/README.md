@@ -84,6 +84,73 @@ Step 4: Verify Data (Search functionality)
 
 ---
 
+## Sample Data - PDF Input & Excel Output
+
+### **Sample from PDF File Input**
+
+Source: `hss_(b.a_nqs)_final_pub._list_-_male.pdf` (27 pages, unstructured text)
+
+**Raw PDF Records (before parsing):**
+```
+ 1. 322016138632 BESA C. MUMBI 131341/69/1
+ 2. 332016131545 BOTHA WELLINGSTON 352149/10/1
+ 3. 342016131604 BOWA HERBERT 200232/18/1
+ 4. 352016136967 BOWA WANKUMBU 376976/65/1
+ 5. 362016140003 BUNGWA BRANDON 318067/68/1
+ 6. 372016140662 BUPE ALLAN 274104/31/1
+ 7. 382016131615 BWALYA EDSON 402083/10/1
+ 8. 392016131883 BWALYA OBRIEN CHILEKWA 308584/68/1
+ 9. 402016135489 BWALYA KAPESO 255410/45/1
+10. 412016135875 BWALYA MUMBI FRANK 497210/67/1
+11. 422016138666 BWALYA N/A MUSONDA 407457/10/1
+12. 432016132715 CHABI BRIGHTON 429070/74/1
+13. 442016131473 CHABU LUKALABA 617382/52/1
+14. 452016135387 CHABU MEMORY 168320/55/1
+15. 462016140551 CHABWERA ATANZIO 306961/31/1
+```
+
+**Challenges Handled:**
+- Combined NO. and STUDENT NO. fields (e.g., "322016138632" → 32, 2016138632)
+- Variable name formats (1-4 name components)
+- NRC/PASSPORT identification (slash-separated format)
+- Mixed data quality across 27 pages
+
+---
+
+### **Sample from Excel Output File**
+
+Generated: `students_list.xlsx` (professionally formatted, 755 records)
+
+**Structured & Formatted Data (after processing):**
+
+| NO. | STUDENT NO. | SURNAME | OTHER NAMES | FIRST NAME | NRC/PASSPORT |
+|-----|-------------|---------|-------------|-----------|-------------|
+| 32 | 2016138632 | BESA | MUMBI | C. | 131341/69/1 |
+| 33 | 2016131545 | BOTHA | — | WELLINGSTON | 352149/10/1 |
+| 34 | 2016131604 | BOWA | — | HERBERT | 200232/18/1 |
+| 35 | 2016136967 | BOWA | — | WANKUMBU | 376976/65/1 |
+| 36 | 2016140003 | BUNGWA | — | BRANDON | 318067/68/1 |
+| 37 | 2016140662 | BUPE | — | ALLAN | 274104/31/1 |
+| 38 | 2016131615 | BWALYA | — | EDSON | 402083/10/1 |
+| 39 | 2016131883 | BWALYA | CHILEKWA | OBRIEN | 308584/68/1 |
+| 40 | 2016135489 | BWALYA | — | KAPESO | 255410/45/1 |
+| 41 | 2016135875 | BWALYA | FRANK | MUMBI | 497210/67/1 |
+| 42 | 2016138666 | BWALYA | MUSONDA | — | 407457/10/1 |
+| 43 | 2016132715 | CHABI | — | BRIGHTON | 429070/74/1 |
+| 44 | 2016131473 | CHABU | — | LUKALABA | 617382/52/1 |
+| 45 | 2016135387 | CHABU | — | MEMORY | 168320/55/1 |
+| 46 | 2016140551 | CHABWERA | — | ATANZIO | 306961/31/1 |
+
+**Output File Features:**
+- ✅ Professional formatting with title row and frozen headers
+- ✅ All 755 student records properly parsed into 6 columns
+- ✅ Auto-filter enabled for sorting and filtering
+- ✅ Dark blue header background with white text
+- ✅ Black borders on all cells
+- ✅ Optimized column widths for readability
+
+---
+
 ## Installation & Setup
 
 ### **Requirements**

@@ -327,78 +327,17 @@ save_students_to_excel_columns(parsed_data, "students_list.xlsx")
 
 ## Sample Data
 
-### **Input: PDF File**
-
-**File:** `hss_(b.a_nqs)_final_pub._list_-_male.pdf` (27 pages, 635 KB)
-
-Raw PDF content (unstructured):
-```
-REGULAR
-MALE
-
-NO. STUDENT NO. SURNAME OTHER NAMES FIRST NAME NRC/PASSPORT
-THE UNIVERSITY OF ZAMBIA
-BACHELOR OF ARTS NON QUOTA SCHOOL OF HUMANITIES AND SOCIAL SCIENCES
-2016 ACADEMIC YEAR ADMISSION LIST
-
-32 2016138632 BESA C. MUMBI 131341/69/1
-33 2016131545 BOTHA WELLINGSTON 352149/10/1
-34 2016131604 BOWA HERBERT 200232/18/1
-35 2016136967 BOWA WANKUMBU 376976/65/1
-36 2016140003 BUNGWA BRANDON 318067/68/1
-37 2016140662 BUPE ALLAN 274104/31/1
-38 2016131615 BWALYA EDSON 402083/10/1
-39 2016131883 BWALYA OBRIEN CHILEKWA 308584/68/1
-40 2016135489 BWALYA KAPESO 255410/45/1
-41 2016135875 BWALYA MUMBI FRANK 497210/67/1
-42 2016138666 BWALYA N/A MUSONDA 407457/10/1
-43 2016132715 CHABI BRIGHTON 429070/74/1
-44 2016131473 CHABU LUKALABA 617382/52/1
-45 2016135387 CHABU MEMORY 168320/55/1
-46 2016140551 CHABWERA ATANZIO 306961/31/1
-```
-
-**Challenges Handled:**
-- Combined NO. and STUDENT NO. fields (e.g., "322016138632")
-- Variable name formats (1-4 components)
-- Mixed data quality (missing fields)
-- Special characters (e.g., "131341/69/1")
-
----
-
-### **Output: Excel File**
-
-**File:** `students_list.xlsx` (758 rows × 6 columns, 37 KB)
+### Input: PDF File
 
 ![PDF Input Screenshot](docs/hss_(b.a_nqs)_final_pub._list_-_male.png)
 
-*PDF screenshot showing original unstructured data*
+The input PDF contains 27 pages of unstructured student enrollment data from the University of Zambia (2016 admission list) with mixed formatting and combined fields.
 
----
-
-**Structured Output (First 15 records):**
-
-| NO. | STUDENT NO. | SURNAME | OTHER NAMES | FIRST NAME | NRC/PASSPORT |
-|-----|-------------|---------|-------------|-----------|-------------|
-| 32 | 2016138632 | BESA | MUMBI | C. | 131341/69/1 |
-| 33 | 2016131545 | BOTHA | — | WELLINGSTON | 352149/10/1 |
-| 34 | 2016131604 | BOWA | — | HERBERT | 200232/18/1 |
-| 35 | 2016136967 | BOWA | — | WANKUMBU | 376976/65/1 |
-| 36 | 2016140003 | BUNGWA | — | BRANDON | 318067/68/1 |
-| 37 | 2016140662 | BUPE | — | ALLAN | 274104/31/1 |
-| 38 | 2016131615 | BWALYA | — | EDSON | 402083/10/1 |
-| 39 | 2016131883 | BWALYA | CHILEKWA | OBRIEN | 308584/68/1 |
-| 40 | 2016135489 | BWALYA | — | KAPESO | 255410/45/1 |
-| 41 | 2016135875 | BWALYA | FRANK | MUMBI | 497210/67/1 |
-| 42 | 2016138666 | BWALYA | MUSONDA | — | 407457/10/1 |
-| 43 | 2016132715 | CHABI | — | BRIGHTON | 429070/74/1 |
-| 44 | 2016131473 | CHABU | — | LUKALABA | 617382/52/1 |
-| 45 | 2016135387 | CHABU | — | MEMORY | 168320/55/1 |
-| 46 | 2016140551 | CHABWERA | — | ATANZIO | 306961/31/1 |
+### Output: Excel File
 
 ![Excel Output Screenshot](docs/students_list.png)
 
-*Excel screenshot showing professionally formatted structured data*
+The output file contains 758 rows with 755 student records organized into 6 columns (NO., STUDENT NO., SURNAME, OTHER NAMES, FIRST NAME, NRC/PASSPORT) with professional formatting including frozen headers, auto-filter, and styled cells.
 
 ---
 

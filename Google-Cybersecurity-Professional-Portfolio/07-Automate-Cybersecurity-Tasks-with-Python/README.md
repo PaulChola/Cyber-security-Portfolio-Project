@@ -157,6 +157,10 @@ Generated: `students_list.xlsx` (professionally formatted, 755 records)
 
 **File:** `hss_(b.a_nqs)_final_pub._list_-_male.pdf` (27 pages)
 
+![PDF File Screenshot](docs/hss_(b.a_nqs)_final_pub._list_-_male.png)
+
+*PDF preview showing original unstructured student enrollment data from The University of Zambia*
+
 ```
 REGULAR
 MALE
@@ -194,6 +198,10 @@ BACHELOR OF ARTS NON QUOTA SCHOOL OF HUMANITIES AND SOCIAL SCIENCES
 ### **Output: Excel File**
 
 **File:** `students_list.xlsx` (758 rows × 6 columns)
+
+![Excel File Screenshot](docs/students_list.png)
+
+*Excel output showing professionally formatted student enrollment list with title, headers, and 755 parsed records*
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────────────────┐
